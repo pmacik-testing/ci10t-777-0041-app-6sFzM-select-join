@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-tfus
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0041-tenant/ci10t-777-0041-app/devfile-sample-tfus@sha256:f9a0c2f0a432421dda427f4d15ee7564605b672756a50eded5d86c54a7f90865
+        name: my-nodejs
+        resources: {}
+status: {}
